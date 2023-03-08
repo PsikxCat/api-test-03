@@ -81,6 +81,6 @@ app.get('/cantantes/:id', (req, res) => {
 
 });
 
-app.listen(PORT, () => {
-  console.log('Example app listening on port 3000!');
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Example app listening on port ${PORT}!`);
 });
